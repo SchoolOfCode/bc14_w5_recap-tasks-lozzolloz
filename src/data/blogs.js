@@ -1,16 +1,22 @@
-export const blog = {
-  title: "My First Post",
-  author: "Chris Meah",
-  datePosted: "20/11/2019",
-  content: `
-      A structure used in most apps and games.
-      It's a way to keep doing the same.
-      While a condition is true,
-      Or for one to twenty-two.
-      If endless, for errors we blame
-      ..........
-      Loop `,
-  imageSrc:
-    "https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-  imageAlt: "A couple of coders.",
-};
+export const blog = [
+  {
+    title: "Did you know that there's a tunnel under Ocean Blvd",
+    author: "Lawrence Allen",
+    datePosted: "17/04/2023",
+    content: `
+ The new album by Lana Del Rey.
+ Check it out.
+ I love it!`,
+    imageSrc:
+      "https://upload.wikimedia.org/wikipedia/en/4/4f/Lana_Del_Rey_-_Did_You_Know_That_There%27s_a_Tunnel_Under_Ocean_Blvd.png",
+    imageAlt: "Lana Del Rey 'Tunnel' album cover.",
+  },
+];
+
+export const comments = [
+  { author: "Joe Bloggs", content: "so true bestie" },
+  {
+    author: "Lana Stan",
+    content: "ate and left no crumbs 🫦",
+  },
+];
