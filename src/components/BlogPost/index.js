@@ -1,17 +1,18 @@
 import React from "react";
 
-function BlogPost(props) {
-  //Replace the word "test" with your post content!
+export default function BlogPost(props) {
   return (
-    <div id="blog-post">
-      <h2>
-        {props.datePosted} {props.author}
-      </h2>
+    <div>
       <h1>{props.title}</h1>
-      <img className="post-image" src={props.imageSrc} alt={props.imageAlt} />
+      <h2>
+        <i>by {props.author}</i>
+      </h2>
+      <p>{props.datePosted}</p>
+      <img src={props.imageSrc} alt={props.imageAlt} />
+      <p>
+        <i>{props.imageAlt}</i>
+      </p>
       <p>{props.content}</p>
     </div>
   );
 }
-
-export default BlogPost;

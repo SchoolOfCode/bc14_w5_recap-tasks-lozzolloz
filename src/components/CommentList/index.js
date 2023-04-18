@@ -1,12 +1,13 @@
-import React from 'react'
-import { comments } from "../../data/blogs.js";
-import Comment from "../Comment/index.js";
+import { comments } from "../../data/blogs";
+import Comment from "../Comment";
 
-function CommentList(props) {
-  const commentContent = comments.map((comment) => {
-    return <Comment author={comment.author} content={comment.content} />;
+function CommentList() {
+  const commentItems = comments.map((item) => {
+    return (
+      <Comment key={item.id} author={item.author} content={item.content} />
+    );
   });
-  return <main id="main">{commentContent}</main>;
+  return <div>{commentItems}</div>;
 }
 
 export default CommentList;
