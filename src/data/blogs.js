@@ -11,10 +11,10 @@ export const blog = {
   imageAlt: "Lana Del Rey 'Tunnel' album cover.",
 };
 
-export const comments = [
-  { id: 1, author: "Joe Bloggs", content: "so true bestie" },
+export let comments = [
+  { id: 0, author: "Joe Bloggs", content: "so true bestie" },
   {
-    id: 2,
+    id: 1,
     author: "Lana Stans Brazil",
     content: "ate and left no crumbs 🫦",
   },
