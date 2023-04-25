@@ -5,6 +5,7 @@ import { comments } from "../../data/blogs";
 function CommentForm() {
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
+  const [commentList, setCommentList] = useState(comments);
 
   function handleNameChange(event) {
     setName(event.target.value);
@@ -13,10 +14,10 @@ function CommentForm() {
     setComment(event.target.value);
   }
   function onSubmit() {
-   comments = [
-      ...comments,
+    setCommentList([
+      ...commentList,
       { id: comments.length, author: { name }, content: { comment } },
-    ];
+    ]);
   }
 
   return (
